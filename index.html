@@ -4,7 +4,18 @@
     <head>
         <style>
             body{
-                background-color: #080808;
+                background-color: #080807;
+                padding: 0;
+                margin: 0;
+            }
+            .textura {
+                background-image: url("textura.jpg");
+                background-size: cover;
+                filter:hue-rotate(180deg);
+                opacity: 0.01;
+                position:absolute;
+                width: 100%;
+                height: 100%;
             }
             .backgroundu {
                 width: 200px;
@@ -13,22 +24,24 @@
                 transform: translate(50% , 50%);
                 left: 50%;
                 top: 50%;
+
             }
             .backgroundu .shape {
-                height: 200px;
-                width: 200px;
+                height: 350px;
+                width: 350px;
                 position: absolute;
                 border-radius: 50%;
+                filter:blur(300px);
             }
             .shape:first-child {
                 background: linear-gradient(#1845ad, #23a2f6);
-                left: -80px;
-                top: -80px;
+                left: 229px;
+                top: 50px;
             }
             .shape:last-child {
                   background: linear-gradient(to right, #ff512f, #f09819);
-                  right: -30px;
-                  bottom: -80px;
+                  right: 229px;
+                  bottom: 50px;
             }
             form {
               height: 520px;
@@ -46,7 +59,7 @@
             }
             form * {
                 font-family: "poppins", sans-serif;
-                color: #fd0606;
+                color: white;
                 letter-spacing: 0.5px;
                 outline: none;
                 border: none;
@@ -69,6 +82,7 @@
                 height: 50px;
                 width: 100%;
                 background-color: rgba(255, 255, 255, 0.7);
+                color:#080710;
                 border-radius: 3px;
                 padding: 0 10px;
                 margin-top: 8px;
@@ -113,6 +127,7 @@
                 }
         </style>
         <body>
+            <div class="textura"></div>
             <dive class="backgroundu">
                 <dive class="shape"></dive>
                 <dive class="shape"></dive>
